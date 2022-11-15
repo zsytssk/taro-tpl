@@ -1,0 +1,34 @@
+@import '@/wui/utils.less';
+.tabBar {
+  :global {
+    .tab-list {
+      position: relative;
+      display: flex;
+      color: #000022d9;
+      font-size: px(14);
+      .tab-item {
+        height: px(32);
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.tab-item-active {
+          color: #da373d;
+        }
+        .text {
+          display: inline-flex;
+        }
+      }
+      .tab-animate-bar {
+        width: px(58);
+        position: absolute;
+        height: px(2);
+        top: px(31);
+
+        background: #da3642;
+        border-radius: 10px;
+        transition: all ease 0.3s;
+      }
+    }
+  }
+}

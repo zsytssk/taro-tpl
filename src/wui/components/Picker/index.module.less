@@ -1,0 +1,68 @@
+@import '../utils.less';
+
+.picker {
+  :global {
+    .wui-modal-wrap {
+      width: 100%;
+      border-radius: px(8) px(8) 0 0;
+      height: auto;
+      background-color: #fff;
+      padding-bottom: calc(var(--safe-area-inset-bottom) - 14px);
+      .modalInner {
+        padding: 14px * 2;
+      }
+      .btn-close {
+        position: absolute;
+        top: px(10);
+        right: px(10);
+        background-color: transparent;
+        padding: 0;
+        width: px(30);
+        height: px(30);
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        &::after {
+          border: none;
+        }
+        image {
+          width: px(14.5);
+          height: px(14.5);
+        }
+      }
+      .title {
+        line-height: px(28);
+        font-size: px(16);
+        color: rgba(0, 0, 34, 0.91);
+        text-align: center;
+      }
+      .content {
+        padding: px(11);
+        .pickerView {
+          height: px(220);
+          position: relative;
+          .item {
+            height: px(43);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .footer {
+        margin-top: px(10);
+        button {
+          height: px(36);
+          line-height: px(36);
+          background: #da373d;
+          border-color: #da373d;
+          border-radius: px(43);
+          color: #fff;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
